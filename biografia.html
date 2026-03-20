@@ -1,245 +1,220 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio — Aliza Vicente Guzman</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- ICONOS -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Aliza Abigail Vicente Guzman</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="topbar">
-    <span class="topbar-brand">Aliza Vicente Guzman</span>
-    </header>
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="blob blob-3" aria-hidden="true"></div>
 
-    <!-- NAV -->
-        <nav class="sidebar" id="sidebar" aria-label="Navegación principal">
-
-        <div class="sidebar-header" aria-hidden="true">
-        <span class="sidebar-initials">AV</span>
-    </div>
-
-    <ul>
-        <li>
-        <a href="#home" aria-label="Inicio">
-            <i class="fa-solid fa-house" aria-hidden="true"></i>
-        </a>
-        </li>
-
-        <li>
-        <a href="#about" aria-label="Acerca de mí">
-            <i class="fa-solid fa-user" aria-hidden="true"></i>
-        </a>
-        </li>
-
-        <li>
-        <a href="#projects" aria-label="Proyectos">
-            <i class="fa-solid fa-folder" aria-hidden="true"></i>
-        </a>
-        </li>
-
-        <li>
-        <a href="#skills" aria-label="Habilidades">
-            <i class="fa-solid fa-code" aria-hidden="true"></i>
-        </a>
-        </li>
-
-        <li>
-        <a href="#tools" aria-label="Herramientas">
-            <i class="fa-solid fa-wrench" aria-hidden="true"></i>
-        </a>
-        </li>
+  <nav aria-label="Navegacion principal">
+    <p class="nav-logo">portfolio</p>
+    <ul class="nav-links">
+      <li><a href="#about">sobre mi</a></li>
+      <li><a href="#projects">proyectos</a></li>
+      <li><a href="#skills">habilidades</a></li>
+      <li><a href="#contact">contacto</a></li>
     </ul>
+  </nav>
 
-    </nav>
+  <main>
 
-
-    <main class="mobile-container">
-
-
-    <!-- HERO -->
-    <section class="hero" id="home" aria-labelledby="hero-title">
-
-        <div class="social">
-        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="https://tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
-            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-        <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
-        </a>
+  <!--INTRODUCCION-->
+  
+    <section id="hero" aria-label="Presentacion">
+      <div class="hero-content">
+        <div class="hero-avatar">
+          <img src="images/me.jpeg" alt="Foto de perfil de Aliza Abigail Vicente Guzman" />
         </div>
-
-        <h1 id="hero-title">Hola, soy <span>Aliza Vicente Guzman</span></h1>
-
-        <button class="btn-primary" id="cv" type="button">
-        <i class="fa-solid fa-download" aria-hidden="true"></i>
-        Descargar CV
-        </button>
-
-        <button class="btn-secondary" id="contact" type="button">
-        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
-        Contáctame
-        </button>
-
+        <div class="hero-text">
+          <h1 class="hero-name">Hola, soy <em>Aliza Abigail Vicente Guzman</em></h1>
+          <p class="hero-role">Disenadora &amp; Desarrolladora Frontend</p>
+          <p class="hero-desc">
+            Soy estudiante de la Universidad Mayor de San Simon, actualmente curso la carrera de Lic. en Ingenieria Informatica.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://drive.google.com/file/u/2/d/1WuAeynEb-HpkbZNe7YaThJx6LUF50vDQ/view?usp=drive_open" class="btn-primary" target="_blank" rel="noopener noreferrer">
+              Visualizar CV
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!--SOBRE MI-->
 
-    <!-- ABOUT -->
-    <section class="about" id="about" aria-labelledby="about-title">
-
-        <h2 id="about-title">Acerca de mí</h2>
-
+    <section id="about" aria-labelledby="about-title">
+      <p class="section-title">Sobre mi</p>
+      <h2 id="about-title" class="section-label">Un poco de mi</h2>
+      <div class="about-grid">
         <div class="about-card">
-
-        <div class="profile-img">
-            <img src="images/image.png" alt="Foto de perfil de Aliza Vicente Guzman">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></div>
+          <div>
+            <h3>Diseno UI/UX</h3>
+            <p>Creo interfaces intuitivas con amor por cada detalle visual.</p>
+          </div>
         </div>
-
-        <p>
-            Soy estudiante de la Universidad Mayor de San Simón y estudio la carrera de Ingeniería Informática.
-        </p>
-
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+          <div>
+            <h3>Desarrollo Web</h3>
+            <p>Convierto disenos en codigo limpio y funcional.</p>
+          </div>
         </div>
-
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-seedling"></i></div>
+          <div>
+            <h3>En constante aprendizaje</h3>
+            <p>Siempre explorando nuevas tecnologias y tendencias.</p>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></div>
+          <div>
+            <h3>Colaborativa</h3>
+            <p>Trabajo bien en equipo y me adapto facilmente a nuevos proyectos.</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-    <!-- PROJECTS -->
-    <section class="projects" id="projects" aria-labelledby="projects-title">
-
-        <h2 id="projects-title">Mis Proyectos</h2>
-
-        <div class="card">
-        <img src="images/image1.png" alt="Captura de pantalla del proyecto Journal">
-        <div class="number" aria-hidden="true">1</div>
-        <div class="info">
-            <h3>Journal</h3>
-            <p>App de diseño creativo para ideas y pensamientos.</p>
-            <span class="framework">React, Supabase</span>
-        </div>
-        </div>
-
-        <div class="card">
-        <img src="images/image2.png" alt="Captura de pantalla del proyecto Redibo">
-        <div class="number" aria-hidden="true">2</div>
-        <div class="info">
-            <h3>Redibo</h3>
-            <p>Página web para renta y gestión de autos.</p>
-            <span class="framework">NestJS, React</span>
-        </div>
-        </div>
-
-        <div class="card">
-        <img src="images/image3.png" alt="Captura de pantalla del proyecto Administrador de Filas">
-        <div class="number" aria-hidden="true">3</div>
-        <div class="info">
-            <h3>Administrador de Filas</h3>
-            <p>Sistema encargado de gestionar el tiempo y la posición de personas dentro de una fila.</p>
-            <span class="framework">Python, React</span>
-        </div>
-        </div>
-
-    </section>
-
 
     <!-- SKILLS -->
-    <section class="skills" id="skills" aria-labelledby="skills-title">
 
-        <h2 id="skills-title">Mis Skills</h2>
-
-        <div class="skills-container">
-
-        <div class="skill-card">
-            <h3>Java</h3>
-            <p>Alto</p>
-            <div class="progreso" role="progressbar" aria-label="Nivel de Java" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar java"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Python</h3>
-            <p>Alto</p>
-            <div class="progreso" role="progressbar" aria-label="Nivel de Python" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar python"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>HTML</h3>
-            <p>Medio</p>
-            <div class="progreso" role="progressbar" aria-label="Nivel de HTML" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar html"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>JavaScript</h3>
-            <p>Medio</p>
-            <div class="progreso" role="progressbar" aria-label="Nivel de JavaScript" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar js"></div>
-            </div>
-        </div>
-
-        </div>
-
+    <section id="skills" aria-labelledby="skills-title">
+      <p class="section-title">Habilidades</p>
+      <h2 id="skills-title" class="section-label">Mis skills</h2>
+      <ul class="skills-wrap">
+        <li class="skill-pill s1">HTML &amp; CSS</li>
+        <li class="skill-pill s2">JavaScript</li>
+        <li class="skill-pill s3">Figma</li>
+        <li class="skill-pill s1">React</li>
+        <li class="skill-pill s4">Tailwind CSS</li>
+        <li class="skill-pill s2">Diseno Responsivo</li>
+        <li class="skill-pill s3">Illustrator</li>
+        <li class="skill-pill s1">Node.js</li>
+        <li class="skill-pill s4">Git &amp; GitHub</li>
+        <li class="skill-pill s2">Accesibilidad</li>
+        <li class="skill-pill s3">Motion Design</li>
+        <li class="skill-pill s1">TypeScript</li>
+      </ul>
     </section>
 
+    <!--PROYECTOS-->
 
-    <!-- TOOLS -->
-    <section class="tools-section" id="tools" aria-labelledby="tools-title">
+    <section id="projects" aria-labelledby="projects-title">
+      <p class="section-title">Proyectos</p>
+      <h2 id="projects-title" class="section-label">Trabajos recientes</h2>
+      <div class="projects-grid">
 
-        <h2 id="tools-title">Herramientas</h2>
+        <article class="project-card">
+          <figure class="project-thumb pt-1">
+            <img src="images/image1.png" alt="Captura del proyecto Journal" />
+          </figure>
+          <div class="project-body">
+            <ul class="project-tags">
+              <li class="project-tag">React</li>
+              <li class="project-tag">Supabase</li>
+            </ul>
+            <h3>Journal</h3>
+            <p>App para registrar y organizar de manera estructurada actividades y reflexiones.</p>
+            <a href="https://github.com/wmrg12/Journal" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </div>
+        </article>
 
-        <div class="tools">
+        <article class="project-card">
+          <figure class="project-thumb pt-2">
+            <img src="images/image2.png" alt="Captura del proyecto Redibo" />
+          </figure>
+          <div class="project-body">
+            <ul class="project-tags">
+              <li class="project-tag">Figma</li>
+              <li class="project-tag">Next.js</li>
+              <li class="project-tag">Nest.js</li>
+            </ul>
+            <h3>Redibo</h3>
+            <p>Pagina web para la gestion y renta de autos.</p>
+            <a href="https://github.com/Ssantivl12/RediBo_Front" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </div>
+        </article>
 
-        <div class="tool">
-            <i class="fab fa-git-alt" aria-hidden="true"></i>
-            <span>Git</span>
-        </div>
+        <article class="project-card">
+          <figure class="project-thumb pt-3">
+            <img src="images/image3.png" alt="Captura del proyecto Gestor de Filas" />
+          </figure>
+          <div class="project-body">
+            <ul class="project-tags">
+              <li class="project-tag">HTML</li>
+              <li class="project-tag">CSS</li>
+              <li class="project-tag">JavaScript</li>
+            </ul>
+            <h3>Gestor de Filas</h3>
+            <p>Sistema para organizar y optimizar el tiempo de atencion al cliente.</p>
+            <a href="https://github.com/lets04/Queue-vision" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </div>
+        </article>
 
-        <div class="tool">
-            <i class="fab fa-figma" aria-hidden="true"></i>
-            <span>Figma</span>
-        </div>
+        <article class="project-card">
+          <figure class="project-thumb pt-1">
+            <img src="images/image12.png" alt="Captura del portafolio personal" />
+          </figure>
+          <div class="project-body">
+            <ul class="project-tags">
+              <li class="project-tag">HTML</li>
+              <li class="project-tag">CSS</li>
+            </ul>
+            <h3>Portafolio personal</h3>
+            <p>Portafolio para presentar de manera organizada la informacion profesional.</p>
+            <a href="https://github.com/wmrg12/portafolio" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+          </div>
+        </article>
 
-        <div class="tool">
-            <i class="fa-solid fa-file-excel" aria-hidden="true"></i>
-            <span>Excel</span>
-        </div>
-
-        <div class="tool">
-            <i class="fa-solid fa-chart-simple" aria-hidden="true"></i>
-            <span>Power BI</span>
-        </div>
-
-        </div>
-
+      </div>
     </section>
 
+    <!--CONTACTO-->
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2026 Vicente. Todos los derechos reservados.</p>
-    </footer>
+    <section id="contact" aria-labelledby="contact-title">
+      <p class="section-title">Contacto</p>
+      <div class="contact-card">
+        <h2 id="contact-title">Redes Sociales</h2>
+        <p>Para obtener mas informacion sobre mi, contactame.</p>
+        <ul class="contact-links">
+          <li>
+            <a href="mailto:alizaabigailvicenteguzman@gmail.com" class="contact-chip">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/vicente-guzm%C3%A1n-aliza-abigail-6290503b5/" class="contact-chip" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/wmrg12" class="contact-chip" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/alz_vct?utm_source=qr&igsh=dnJqbWM5bjRlOWt5" class="contact-chip" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-    </main>
+  </main>
 
-    <script src="main.js"></script>
+  <footer>
+    <p>Portafolio personal — <span>Aliza Abigail Vicente Guzman</span> &copy; 2026</p>
+  </footer>
 
 </body>
 </html>
