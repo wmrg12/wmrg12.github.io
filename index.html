@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio personal de Aliza Abigail Vicente Guzman, disenadora y desarrolladora frontend." />
   <title>Portfolio — Aliza Abigail Vicente Guzman</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
+
 <body>
 
   <div class="blob blob-1" aria-hidden="true"></div>
@@ -26,21 +32,22 @@
 
   <main>
 
-  <!--INTRODUCCION-->
-  
-    <section id="hero" aria-label="Presentacion">
+    <!-- INTRODUCCION -->
+    <section id="hero" aria-labelledby="hero-title">
       <div class="hero-content">
         <div class="hero-avatar">
           <img src="images/me.jpeg" alt="Foto de perfil de Aliza Abigail Vicente Guzman" />
         </div>
         <div class="hero-text">
-          <h1 class="hero-name">Hola, soy <em>Aliza Abigail Vicente Guzman</em></h1>
+          <h1 id="hero-title" class="hero-name">Hola, soy <em>Aliza Abigail Vicente Guzman</em></h1>
           <p class="hero-role">Disenadora &amp; Desarrolladora Frontend</p>
           <p class="hero-desc">
-            Soy estudiante de la Universidad Mayor de San Simon, actualmente curso la carrera de Lic. en Ingenieria Informatica.
+            Soy estudiante de la Universidad Mayor de San Simon, actualmente curso la carrera de Lic. en Ingenieria
+            Informatica.
           </p>
           <div class="hero-ctas">
-            <a href="https://drive.google.com/file/u/2/d/1WuAeynEb-HpkbZNe7YaThJx6LUF50vDQ/view?usp=drive_open" class="btn-primary" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/u/2/d/1WuAeynEb-HpkbZNe7YaThJx6LUF50vDQ/view?usp=drive_open"
+              class="btn-primary" target="_blank" rel="noopener noreferrer">
               Visualizar CV
             </a>
           </div>
@@ -48,11 +55,10 @@
       </div>
     </section>
 
-    <!--SOBRE MI-->
-
+    <!-- SOBRE MI -->
     <section id="about" aria-labelledby="about-title">
-      <p class="section-title">Sobre mi</p>
-      <h2 id="about-title" class="section-label">Un poco de mi</h2>
+      <h2 id="about-title" class="section-title">Sobre mi</h2>
+      <p class="section-label">Un poco de mi</p>
       <div class="about-grid">
         <div class="about-card">
           <div class="about-icon" aria-hidden="true"><i class="fa-solid fa-palette"></i></div>
@@ -86,10 +92,9 @@
     </section>
 
     <!-- SKILLS -->
-
     <section id="skills" aria-labelledby="skills-title">
-      <p class="section-title">Habilidades</p>
-      <h2 id="skills-title" class="section-label">Mis skills</h2>
+      <h2 id="skills-title" class="section-title">Habilidades</h2>
+      <p class="section-label">Mis skills</p>
       <ul class="skills-wrap">
         <li class="skill-pill s1">HTML &amp; CSS</li>
         <li class="skill-pill s2">JavaScript</li>
@@ -106,84 +111,86 @@
       </ul>
     </section>
 
-    <!--PROYECTOS-->
-
+    <!-- PROYECTOS -->
     <section id="projects" aria-labelledby="projects-title">
-      <p class="section-title">Proyectos</p>
-      <h2 id="projects-title" class="section-label">Trabajos recientes</h2>
+      <h2 id="projects-title" class="section-title">Proyectos</h2>
+      <p class="section-label">Trabajos recientes</p>
       <div class="projects-grid">
 
         <article class="project-card">
-          <figure class="project-thumb pt-1">
+          <div class="project-thumb">
             <img src="images/image1.png" alt="Captura del proyecto Journal" />
-          </figure>
+          </div>
           <div class="project-body">
             <ul class="project-tags">
-              <li class="project-tag">React</li>
-              <li class="project-tag">Supabase</li>
+              <li><span class="project-tag">React</span></li>
+              <li><span class="project-tag">Supabase</span></li>
             </ul>
             <h3>Journal</h3>
             <p>App para registrar y organizar de manera estructurada actividades y reflexiones.</p>
-            <a href="https://github.com/wmrg12/Journal" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            <a href="https://github.com/wmrg12/Journal" class="project-link" target="_blank"
+              rel="noopener noreferrer">Ver proyecto</a>
           </div>
         </article>
 
         <article class="project-card">
-          <figure class="project-thumb pt-2">
+          <div class="project-thumb">
             <img src="images/image2.png" alt="Captura del proyecto Redibo" />
-          </figure>
+          </div>
           <div class="project-body">
             <ul class="project-tags">
-              <li class="project-tag">Figma</li>
-              <li class="project-tag">Next.js</li>
-              <li class="project-tag">Nest.js</li>
+              <li><span class="project-tag">Figma</span></li>
+              <li><span class="project-tag">Next.js</span></li>
+              <li><span class="project-tag">Nest.js</span></li>
             </ul>
             <h3>Redibo</h3>
             <p>Pagina web para la gestion y renta de autos.</p>
-            <a href="https://github.com/Ssantivl12/RediBo_Front" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            <a href="https://github.com/Ssantivl12/RediBo_Front" class="project-link" target="_blank"
+              rel="noopener noreferrer">Ver proyecto</a>
           </div>
         </article>
 
         <article class="project-card">
-          <figure class="project-thumb pt-3">
+          <div class="project-thumb">
             <img src="images/image3.png" alt="Captura del proyecto Gestor de Filas" />
-          </figure>
+          </div>
           <div class="project-body">
             <ul class="project-tags">
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
-              <li class="project-tag">JavaScript</li>
+              <li><span class="project-tag">HTML</span></li>
+              <li><span class="project-tag">CSS</span></li>
+              <li><span class="project-tag">JavaScript</span></li>
             </ul>
             <h3>Gestor de Filas</h3>
             <p>Sistema para organizar y optimizar el tiempo de atencion al cliente.</p>
-            <a href="https://github.com/lets04/Queue-vision" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            <a href="https://github.com/lets04/Queue-vision" class="project-link" target="_blank"
+              rel="noopener noreferrer">Ver proyecto</a>
           </div>
         </article>
 
         <article class="project-card">
-          <figure class="project-thumb pt-1">
+          <div class="project-thumb">
             <img src="images/image12.png" alt="Captura del portafolio personal" />
-          </figure>
+          </div>
           <div class="project-body">
             <ul class="project-tags">
-              <li class="project-tag">HTML</li>
-              <li class="project-tag">CSS</li>
+              <li><span class="project-tag">HTML</span></li>
+              <li><span class="project-tag">CSS</span></li>
             </ul>
             <h3>Portafolio personal</h3>
             <p>Portafolio para presentar de manera organizada la informacion profesional.</p>
-            <a href="https://github.com/wmrg12/portafolio" class="project-link" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+            <a href="https://github.com/wmrg12/portafolio" class="project-link" target="_blank"
+              rel="noopener noreferrer">Ver proyecto</a>
           </div>
         </article>
 
       </div>
     </section>
 
-    <!--CONTACTO-->
-
+    <!-- CONTACTO -->
     <section id="contact" aria-labelledby="contact-title">
-      <p class="section-title">Contacto</p>
+      <h2 id="contact-title" class="section-title">Contacto</h2>
       <div class="contact-card">
-        <h2 id="contact-title">Redes Sociales</h2>
+        <h3>Redes Sociales</h3>
         <p>Para obtener mas informacion sobre mi, contactame.</p>
         <ul class="contact-links">
           <li>
@@ -192,7 +199,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/vicente-guzm%C3%A1n-aliza-abigail-6290503b5/" class="contact-chip" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/vicente-guzm%C3%A1n-aliza-abigail-6290503b5/" class="contact-chip"
+              target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
             </a>
           </li>
@@ -202,7 +210,8 @@
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/alz_vct?utm_source=qr&igsh=dnJqbWM5bjRlOWt5" class="contact-chip" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/alz_vct?utm_source=qr&igsh=dnJqbWM5bjRlOWt5" class="contact-chip"
+              target="_blank" rel="noopener noreferrer">
               <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
             </a>
           </li>
@@ -213,8 +222,9 @@
   </main>
 
   <footer>
-    <p>Portafolio personal — <span>Aliza Abigail Vicente Guzman</span> &copy; 2026</p>
+    <p>Portafolio personal &mdash; <span>Aliza Abigail Vicente Guzman</span> &copy; 2026</p>
   </footer>
 
 </body>
+
 </html>
